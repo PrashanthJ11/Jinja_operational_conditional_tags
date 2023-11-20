@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested if </title>
+</head>
+<body>
+    <center>
+        {% if a > b %}
+            {% if a > c%}
+                <h1>This is If's if block</h1>
+                <h2> A is greater than B,C</h2>
+            {% else %}
+                <h1>This is If's Else block</h1>
+                <h2>C is greater than A,B</h2>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                <h1>This is else's if block</h1>
+                <h2> B is greater than A,C</h2>
+            {% else %}
+                <h1>This is else's else block</h1>
+                <h2>C is greater than A,B</h2>
+            {% endif %}
+        {% endif %}
+    </center>
+    
+</body>
+</html>
